@@ -1,7 +1,0 @@
-project_id = "cnlfupchndmkoaqhkrxz"
-
-[functions.catalogue]
-verify_jwt = true
-
-[functions.submit-enquiry]
-verify_jwt = true
