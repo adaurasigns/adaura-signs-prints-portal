@@ -4,7 +4,7 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "test:pricing": "node src/pricing.test.js",
+    "test:pricing": "node --test src/printing.test.js",
     "test": "node --test"
   }
 }
