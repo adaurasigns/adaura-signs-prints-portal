@@ -1,0 +1,16 @@
+#cloud-config
+# Paste this in OCI Create Instance > Advanced options > Cloud-init script.
+# Launch an Ubuntu 24.04 LTS ARM64 image on VM.Standard.A1.Flex.
+package_update: true
+package_upgrade: true
+packages:
+  - git
+  - curl
+  - ca-certificates
+  - gnupg
+
+runcmd:
+  - [bash, -lc, "curl -fsSL https://deb.nodesource.com/setup_22.x | bash -"]
+  - [apt-get, install, -y, nodejs]
+  - [git, clone, --depth, "1", --branch, "work/no-supabase-rebuild", "https://github.com/adaurasigns/adaura-signs-prints-portal.git", "/opt/adaura-portal"]
+  - [bash, /opt/adaura-portal/oci/install.sh]
