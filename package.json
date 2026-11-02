@@ -1,0 +1,10 @@
+{
+  "name": "adaura-signs-prints-portal",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "test:pricing": "node src/pricing.test.js",
+    "test": "node --test"
+  }
+}
