@@ -107,3 +107,16 @@ The app's database and artwork live in `$WEENY_DATA_DIR` and survive app release
 - The free server sleeps after 30 idle minutes, so it is suitable for a trial/beta, not a guaranteed always-on service.
 - The default public URL is a Weeny subdomain. Custom domains require a paid plan.
 - Do not collect actual customer payment information on this beta. Customer records and uploaded artwork are personal/business data; keep the test limited until additional security and operational review.
+
+
+## Redeploy after changing the website
+
+The first release is already live at the URL printed by Weeny. New GitHub commits do not automatically update that release. To redeploy from the server, run the included Windows script in PowerShell:
+
+```powershell
+$script = Join-Path $env:TEMP 'update-adaura-weeny.ps1'
+Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/adaurasigns/adaura-signs-prints-portal/work/no-supabase-rebuild/update-adaura-weeny.ps1' -OutFile $script
+powershell -ExecutionPolicy Bypass -File $script
+```
+
+It fetches the latest `work/no-supabase-rebuild` branch into the existing `/workspace/adaura-portal` folder and creates a new Weeny release. It does not create another server, reconfigure admin credentials, or change the public URL. The app database and uploaded files remain under `WEENY_DATA_DIR`.
