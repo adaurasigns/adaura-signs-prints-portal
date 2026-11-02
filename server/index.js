@@ -1,5 +1,6 @@
 import express from 'express';
 import session from 'express-session';
+import SQLiteStoreFactory from 'connect-sqlite3';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import bcrypt from 'bcryptjs';
@@ -14,7 +15,9 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=process.env.DATA_DIR||path.join(root,'data');fs.mkdirSync(path.join(data,'uploads'),{recursive:true});
 const db=new Database(path.join(data,'adaura.sqlite'));db.pragma('journal_mode=WAL');db.pragma('foreign_keys=ON');db.exec(fs.readFileSync(path.join(root,'server/schema.sql'),'utf8'));
 const app=express();app.set('trust proxy',1);app.use(helmet({contentSecurityPolicy:false}));app.use(express.json({limit:'1mb'}));
-app.use(session({name:'adaura.sid',secret:process.env.SESSION_SECRET||'CHANGE_THIS_SESSION_SECRET_BEFORE_DEPLOYMENT',resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:'lax',secure:process.env.NODE_ENV==='production',maxAge:604800000}}));
+if(process.env.NODE_ENV==='production'&&(!process.env.SESSION_SECRET||process.env.SESSION_SECRET.length<32))throw new Error('Set SESSION_SECRET (32+ characters) before production startup.');
+const SQLiteStore=SQLiteStoreFactory(session);
+app.use(session({store:new SQLiteStore({db:'sessions.sqlite',dir:data}),name:'adaura.sid',secret:process.env.SESSION_SECRET||'local-development-only-change-before-deploying',resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:'lax',secure:process.env.NODE_ENV==='production',maxAge:604800000}}));
 app.use('/api/auth',rateLimit({windowMs:900000,limit:30}));
 const upload=multer({dest:path.join(data,'uploads'),limits:{fileSize:25*1024*1024},fileFilter:(_r,f,cb)=>{const ok=['application/pdf','image/jpeg','image/png','image/webp','application/postscript','application/illustrator'].includes(f.mimetype);cb(ok?null:new Error('Unsupported file type'),ok)}});
 const me=u=>u&&({id:u.id,name:u.name,email:u.email,phone:u.phone,customer_type:u.customer_type,business_name:u.business_name,gstin:u.gstin,account_status:u.account_status,role:u.role});
@@ -26,8 +29,8 @@ const settings=()=>db.prepare('SELECT * FROM pricing_settings WHERE id=1').get()
 const price=(v,t,s)=>t==='b2b'?quoteB2B({supplierRateInclusive:v.supplier_rate_inclusive,markupPercent:s.b2b_markup_percent,minimumAddition:s.b2b_minimum_addition,gstRatePercent:v.gst_rate_percent}).unitPriceInclusive:quoteB2C({supplierRateInclusive:v.supplier_rate_inclusive,markupPercent:s.b2c_markup_percent,gstRatePercent:v.gst_rate_percent}).unitPriceInclusive;
 const number=(prefix)=>prefix+'-'+Date.now().toString().slice(-8)+'-'+crypto.randomBytes(2).toString('hex').toUpperCase();
 app.get('/api/health',(_q,r)=>r.json({ok:true,database:'SQLite'}));
-app.post('/api/auth/register',async(q,r)=>{const b=q.body||{};if(!b.name||!b.email||!b.password||b.password.length<10)return r.status(400).json({error:'Name, email and password (10+ characters) required.'});if(!['b2b','b2c'].includes(b.customer_type||'b2c'))return r.status(400).json({error:'Invalid customer type.'});try{const h=await bcrypt.hash(b.password,12),x=db.prepare('INSERT INTO users(name,email,password_hash,phone,customer_type,business_name,gstin) VALUES(?,?,?,?,?,?,?)').run(b.name.trim(),b.email.trim().toLowerCase(),h,b.phone||null,b.customer_type||'b2c',b.business_name||null,b.gstin||null);q.session.userId=x.lastInsertRowid;r.status(201).json({user:me(user(q))});}catch(e){r.status(409).json({error:e.code==='SQLITE_CONSTRAINT_UNIQUE'?'Email already registered.':'Could not register.'});}});
-app.post('/api/auth/login',async(q,r)=>{const u=db.prepare('SELECT * FROM users WHERE email=? COLLATE NOCASE').get(String(q.body?.email||'').trim());if(!u||!await bcrypt.compare(String(q.body?.password||''),u.password_hash))return r.status(401).json({error:'Email or password is incorrect.'});q.session.userId=u.id;r.json({user:me(u)});});
+app.post('/api/auth/register',async(q,r)=>{const b=q.body||{};if(!b.name||!b.email||!b.password||b.password.length<10)return r.status(400).json({error:'Name, email and password (10+ characters) required.'});if(!['b2b','b2c'].includes(b.customer_type||'b2c'))return r.status(400).json({error:'Invalid customer type.'});try{const h=await bcrypt.hash(b.password,12),x=db.prepare('INSERT INTO users(name,email,password_hash,phone,customer_type,business_name,gstin) VALUES(?,?,?,?,?,?,?)').run(b.name.trim(),b.email.trim().toLowerCase(),h,b.phone||null,b.customer_type||'b2c',b.business_name||null,b.gstin||null);q.session.regenerate(err=>{if(err)return r.status(500).json({error:'Could not start session.'});q.session.userId=x.lastInsertRowid;q.session.save(e=>e?r.status(500).json({error:'Could not save session.'}):r.status(201).json({user:me(user(q))}));});}catch(e){r.status(409).json({error:e.code==='SQLITE_CONSTRAINT_UNIQUE'?'Email already registered.':'Could not register.'});}});
+app.post('/api/auth/login',async(q,r)=>{const u=db.prepare('SELECT * FROM users WHERE email=? COLLATE NOCASE').get(String(q.body?.email||'').trim());if(!u||!await bcrypt.compare(String(q.body?.password||''),u.password_hash))return r.status(401).json({error:'Email or password is incorrect.'});q.session.regenerate(err=>{if(err)return r.status(500).json({error:'Could not start session.'});q.session.userId=u.id;q.session.save(e=>e?r.status(500).json({error:'Could not save session.'}):r.json({user:me(u)}));});});
 app.post('/api/auth/logout',(q,r)=>q.session.destroy(()=>r.json({ok:true})));
 app.get('/api/auth/me',(q,r)=>r.json({user:me(user(q))||null}));
 app.get('/api/catalogue',(q,r)=>{const u=user(q),s=settings(),products=db.prepare('SELECT * FROM products WHERE active=1 ORDER BY sort_order,name').all(),variants=db.prepare('SELECT * FROM variants WHERE active=1').all().map(v=>({id:v.id,product_id:v.product_id,sku:v.sku,name:v.name,options:JSON.parse(v.options_json),quantity_unit:v.quantity_unit,gst_rate_percent:v.gst_rate_percent,unit_price_inclusive:u?.account_status==='approved'?price(v,u.customer_type,s):null}));r.json({products,variants,customer_type:u?.customer_type||'guest'});});
@@ -49,7 +52,7 @@ app.post('/api/admin/enquiries/:id/convert',auth,admin,(q,r)=>{const e=db.prepar
 app.get('/api/admin/orders',auth,admin,(_q,r)=>r.json({orders:db.prepare('SELECT o.*,u.name customer_name FROM orders o JOIN users u ON u.id=o.customer_id ORDER BY o.id DESC').all()}));
 app.patch('/api/admin/orders/:id',auth,admin,(q,r)=>{const b=q.body||{};db.prepare('UPDATE orders SET status=COALESCE(?,status),payment_status=COALESCE(?,payment_status),notes=COALESCE(?,notes) WHERE id=?').run(b.status||null,b.payment_status||null,b.notes??null,q.params.id);r.json({ok:true});});
 app.use('/uploads',auth,(q,r,next)=>{const f=db.prepare('SELECT customer_id FROM artwork_files WHERE stored_name=?').get(path.basename(q.path));if(!f||!(f.customer_id===q.user.id||q.user.role==='admin'))return r.sendStatus(404);next();},express.static(path.join(data,'uploads')));
-app.use(express.static(root,{index:'index.html',dotfiles:'deny'}));
+app.use(express.static(path.join(root,'public'),{index:'index.html',dotfiles:'deny'}));
 app.use((e,_q,r,_n)=>{console.error(e);r.status(400).json({error:e.message||'Request failed.'});});
 if(process.env.ADMIN_EMAIL&&process.env.ADMIN_PASSWORD){
  const existing=db.prepare("SELECT id FROM users WHERE email=? COLLATE NOCASE").get(process.env.ADMIN_EMAIL);
