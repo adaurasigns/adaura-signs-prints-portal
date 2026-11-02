@@ -6,7 +6,7 @@ The static storefront is in `index.html`. It uses Supabase Auth in the browser a
 
 ## Supabase setup
 
-The project owner previously reported applying the two initial migrations and seeing the schema tables. Confirm the live project before applying anything again.
+The project owner previously reported applying the two initial migrations and seeing the schema tables. Confirm the live project before applying anything again. Apply the new migration `202611020003_enquiries_and_supplier_cost_protection.sql` after the first two migrations. It removes direct customer access to supplier-rate rows and creates the secure enquiry table.
 
 ### 1. Import the visiting-card catalogue
 
@@ -20,10 +20,10 @@ From the repository root, with the Supabase CLI linked to the AdAura project:
 
 ```sh
 supabase link --project-ref cnlfupchndmkoaqhkrxz
-supabase functions deploy catalogue
+supabase functions deploy catalogue\nsupabase functions deploy submit-enquiry
 ```
 
-The function uses Supabase's Edge Function environment variables and requires JWT verification. It verifies the signed-in user, checks the customer's profile approval, calculates the correct B2B/B2C customer price on the server, and never returns the supplier cost.
+Both functions use Supabase's Edge Function environment variables and require JWT verification. `catalogue` verifies the signed-in user, checks account approval, calculates customer-specific B2B/B2C prices on the server, and never returns supplier cost. `submit-enquiry` revalidates variant IDs, quantities and prices on the server before saving the customer's enquiry.
 
 ### 3. Connect the browser
 
@@ -35,4 +35,4 @@ Do not paste the service-role key. The public key is intended for browser use an
 
 ## Not yet live
 
-The current enquiry builder is local to the browser. It does not create a database order, accept artwork, debit wallet funds or charge Razorpay. Those require separate transactional Edge Functions, payment/webhook verification, admin bootstrap and end-to-end testing. Do not accept live payments until those pieces are complete.
+The enquiry builder submits a saved quote enquiry after migration 003 and both Edge Functions are deployed. It does not create a production order, accept artwork, debit wallet funds or charge Razorpay. Those require separate transactional Edge Functions, payment/webhook verification, admin bootstrap and end-to-end testing. Do not accept live payments until those pieces are complete.
