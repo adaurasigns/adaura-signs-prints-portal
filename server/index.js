@@ -15,8 +15,20 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const data=process.env.WEENY_DATA_DIR||process.env.DATA_DIR||path.join(root,'data');fs.mkdirSync(path.join(data,'uploads'),{recursive:true});
 const db=new Database(path.join(data,'adaura.sqlite'));db.pragma('journal_mode=WAL');db.pragma('foreign_keys=ON');db.exec(fs.readFileSync(path.join(root,'server/schema.sql'),'utf8'));
 const app=express();app.set('trust proxy',1);app.use(helmet({contentSecurityPolicy:false}));app.use(express.json({limit:'1mb'}));
-if(process.env.NODE_ENV==='production'&&(!process.env.SESSION_SECRET||process.env.SESSION_SECRET.length<32))throw new Error('Set SESSION_SECRET (32+ characters) before production startup.');
-app.use(session({store:new SQLiteSessionStore(db),name:'adaura.sid',secret:process.env.SESSION_SECRET||'local-development-only-change-before-deploying',resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:'lax',secure:process.env.NODE_ENV==='production',maxAge:604800000}}));
+let sessionSecret=process.env.SESSION_SECRET;
+if(!sessionSecret){
+ const secretFile=path.join(data,'.session-secret');
+ try{
+  sessionSecret=fs.readFileSync(secretFile,'utf8').trim();
+ }catch(error){
+  if(error.code!=='ENOENT')throw error;
+  const generated=crypto.randomBytes(48).toString('hex');
+  try{fs.writeFileSync(secretFile,generated,{flag:'wx',mode:0o600});sessionSecret=generated;}
+  catch(writeError){if(writeError.code!=='EEXIST')throw writeError;sessionSecret=fs.readFileSync(secretFile,'utf8').trim();}
+ }
+}
+if(sessionSecret.length<32)throw new Error('SESSION_SECRET must contain at least 32 characters.');
+app.use(session({store:new SQLiteSessionStore(db),name:'adaura.sid',secret:sessionSecret,resave:false,saveUninitialized:false,cookie:{httpOnly:true,sameSite:'lax',secure:process.env.NODE_ENV==='production',maxAge:604800000}}));
 app.use('/api/auth',rateLimit({windowMs:900000,limit:30}));
 const upload=multer({dest:path.join(data,'uploads'),limits:{fileSize:25*1024*1024},fileFilter:(_r,f,cb)=>{const ok=['application/pdf','image/jpeg','image/png','image/webp','application/postscript','application/illustrator'].includes(f.mimetype);cb(ok?null:new Error('Unsupported file type'),ok)}});
 const me=u=>u&&({id:u.id,name:u.name,email:u.email,phone:u.phone,customer_type:u.customer_type,business_name:u.business_name,gstin:u.gstin,account_status:u.account_status,role:u.role});
