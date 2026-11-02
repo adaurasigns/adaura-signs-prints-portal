@@ -16,7 +16,6 @@ The live project was previously reported to have migrations 001 and 002 applied 
 ```powershell
 $env:PGSSLMODE = "require"
 $env:PGCONNECT_TIMEOUT = "15"
-$env:PGPASSWORD = Read-Host "Enter the AdAura database password" -AsSecureString | ConvertFrom-SecureString
 ```
 
 For security and compatibility, the preferred method is to let psql prompt for the password rather than setting PGPASSWORD. Use the connection URI with the password omitted:
