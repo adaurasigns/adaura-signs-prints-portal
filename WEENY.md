@@ -18,18 +18,18 @@ Use this first deployment for a private/controlled beta with test customer accou
 
 ## Quick deployment on Windows 10/11
 
-The repository includes a guided PowerShell script. It downloads this exact branch, signs in, checks whether you already have a Weeny server, asks before creating one, deploys AdAura, generates a strong session secret and first admin password locally, and exposes the portal over HTTPS. It never sends those generated secrets to ChatGPT or commits them to GitHub.
+The repository includes a guided PowerShell script that uses the existing server-side deploy command. This avoids the laptop upload/push protocol; it clones the public source from GitHub on the Weeny server, deploys from `/workspace/adaura-portal`, sets a persistent session secret and first administrator, and exposes port 3000 over HTTPS.
 
-Requirements: Node.js 22+ and PowerShell. Install Node.js from https://nodejs.org/en/download/ if needed, then open a new PowerShell window and run:
+Requirements: Node.js 22+ and PowerShell. Git for Windows and Windows OpenSSH may be installed for the laptop CLI. Open a fresh PowerShell window and ensure Git Bash is on PATH for this session if the CLI reports a process-spawn error. Then run:
 
 ```powershell
+$env:Path = "$env:LOCALAPPDATA\Programs\Git\bin;$env:LOCALAPPDATA\Programs\Git\usr\bin;$env:Path"
 $script = Join-Path $env:TEMP 'deploy-adaura-weeny.ps1'
 Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/adaurasigns/adaura-signs-prints-portal/work/no-supabase-rebuild/deploy-weeny.ps1' -OutFile $script
 powershell -ExecutionPolicy Bypass -File $script
 ```
 
-Follow the prompts. The script asks you to enter the email used for your AdAura administrator login; it generates the initial admin password on your PC and prints it once at the end. Save it in a password manager. Never paste the password or email verification code into ChatGPT. If a command fails, share only the error text.
-
+Follow the prompts. The script asks for the Weeny account email and verification code, checks for the existing server, deploys on that server, and asks for the AdAura admin email. It generates a unique administrator password locally and prints it once at the end. Save it in a password manager. Never paste the password or email verification code into ChatGPT. If a command fails, share only the error text.
 ## Deployment from a machine with the repository checked out
 
 Weeny's CLI runs on your computer. It deploys the current local folder; merely connecting GitHub is not enough.
