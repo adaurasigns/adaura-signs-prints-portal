@@ -8,7 +8,8 @@
     "dev": "node --watch server/index.js",
     "test": "node --test",
     "test:pricing": "node --test src/printing.test.js",
-    "seed:catalogue": "node server/seed-catalogue.js"
+    "seed:catalogue": "node server/seed-catalogue.js",
+    "start:weeny": "npm run seed:catalogue && npm start"
   },
   "engines": {
     "node": ">=22"
