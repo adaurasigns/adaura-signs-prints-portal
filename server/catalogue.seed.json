@@ -1,0 +1,1784 @@
+{
+  "source": "Printers Club Visiting Cards Rate List",
+  "supplier_rates": "GST-inclusive",
+  "gst_assumption_note": "18% is the legacy prototype value. Confirm tax classification product-wise with the CA before invoicing.",
+  "products": [
+    {
+      "sku": "VC-METAL",
+      "name": "Metal Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 50 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-500-VELVET",
+      "name": "500 GSM Velvet Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 500 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-500-MATT",
+      "name": "500 GSM Matt Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 500 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS",
+      "name": "800 Micron Gold + Gloss",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 100 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-800-MATT",
+      "name": "800 Micron + Matt",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 100 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-800-VELVET",
+      "name": "800 Micron + Velvet",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 100 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS",
+      "name": "800 Micron Silver + Gloss",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 100 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-180",
+      "name": "180 Micron Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-MATT-UV",
+      "name": "Matt + UV Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-MATT",
+      "name": "Matt Lamination Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-MATT-TEXTURE",
+      "name": "Matt + Texture Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-GLOSS-TEXTURE",
+      "name": "Gloss + Texture Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-GLOSS-LAM",
+      "name": "Gloss Lamination Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-GLOSS-UV",
+      "name": "Gloss UV Coated Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-WITHOUT-COATING",
+      "name": "Without Coating Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-GLOSS-UV-SMALL",
+      "name": "Gloss UV Coated Small Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    },
+    {
+      "sku": "VC-WITHOUT-LAM-SMALL",
+      "name": "Without Lamination Small Cards",
+      "category": "Visiting Cards",
+      "description": "Supplier catalogue variants. Supplier rates are GST-inclusive and represent 1000 cards.",
+      "sort_order": 10
+    }
+  ],
+  "variants": [
+    {
+      "sku": "VC-METAL-001",
+      "name": "1 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3043,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-METAL-002",
+      "name": "2 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3138,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-METAL-003",
+      "name": "3 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3232,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-METAL-004",
+      "name": "4 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3326,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-METAL-005",
+      "name": "5 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3421,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-METAL-006",
+      "name": "6 colour text/logo",
+      "options": {
+        "pack_size": "50 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 3515,
+      "gst_rate_percent": 18,
+      "quantity_unit": "50 cards",
+      "product_sku": "VC-METAL"
+    },
+    {
+      "sku": "VC-500-VELVET-001",
+      "name": "500 GSM + Velvet",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1108,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-VELVET"
+    },
+    {
+      "sku": "VC-500-VELVET-002",
+      "name": "500 GSM + Velvet + UV + Die Cut",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1250,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-VELVET"
+    },
+    {
+      "sku": "VC-500-VELVET-003",
+      "name": "500 GSM + Velvet + UV + Foil + Die Cut",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1486,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-VELVET"
+    },
+    {
+      "sku": "VC-500-VELVET-004",
+      "name": "500 GSM + Velvet + UV",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1250,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-VELVET"
+    },
+    {
+      "sku": "VC-500-VELVET-005",
+      "name": "500 GSM + Velvet + UV + Foil + Customized Die Cut",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1580,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-VELVET"
+    },
+    {
+      "sku": "VC-500-MATT-001",
+      "name": "500 GSM + Matt + UV + Die Cut",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1132,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-MATT"
+    },
+    {
+      "sku": "VC-500-MATT-002",
+      "name": "500 GSM + Matt + UV + Foil + Die Cut",
+      "options": {
+        "pack_size": "500 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1368,
+      "gst_rate_percent": 18,
+      "quantity_unit": "500 cards",
+      "product_sku": "VC-500-MATT"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-001",
+      "name": "Spot UV not required; no foil",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Not required",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1156,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-002",
+      "name": "Spot UV not required; Gold foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Gold - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-003",
+      "name": "Spot UV not required; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-004",
+      "name": "Spot UV not required; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-005",
+      "name": "Spot UV not required; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-006",
+      "name": "Spot UV not required; Red foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-007",
+      "name": "Spot UV not required; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-008",
+      "name": "Spot UV not required; Green foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-009",
+      "name": "Spot UV not required; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-010",
+      "name": "Spot UV not required; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-011",
+      "name": "Spot UV not required; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-012",
+      "name": "Spot UV 1 side; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-013",
+      "name": "Spot UV 1 side; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-014",
+      "name": "Spot UV 1 side; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-015",
+      "name": "Spot UV 1 side; Red foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-016",
+      "name": "Spot UV 1 side; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-017",
+      "name": "Spot UV 1 side; Green foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-018",
+      "name": "Spot UV 1 side; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-019",
+      "name": "Spot UV 1 side; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-GOLD-GLOSS-020",
+      "name": "Spot UV 1 side; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron Gold + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-GOLD-GLOSS"
+    },
+    {
+      "sku": "VC-800-MATT-001",
+      "name": "Spot UV not required; no foil",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Not required",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1156,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-002",
+      "name": "Spot UV not required; Gold foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Gold - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-003",
+      "name": "Spot UV not required; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-004",
+      "name": "Spot UV not required; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-005",
+      "name": "Spot UV not required; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-006",
+      "name": "Spot UV not required; Red foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-007",
+      "name": "Spot UV not required; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-008",
+      "name": "Spot UV not required; Green foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-009",
+      "name": "Spot UV not required; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-010",
+      "name": "Spot UV not required; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-011",
+      "name": "Spot UV not required; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "Not required",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-012",
+      "name": "Spot UV 1 side; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-013",
+      "name": "Spot UV 1 side; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-014",
+      "name": "Spot UV 1 side; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-015",
+      "name": "Spot UV 1 side; Red foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-016",
+      "name": "Spot UV 1 side; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-017",
+      "name": "Spot UV 1 side; Green foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-018",
+      "name": "Spot UV 1 side; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-019",
+      "name": "Spot UV 1 side; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-MATT-020",
+      "name": "Spot UV 1 side; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron + Matt",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-MATT"
+    },
+    {
+      "sku": "VC-800-VELVET-001",
+      "name": "Spot UV not required; no foil",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Not required",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1156,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-002",
+      "name": "Spot UV not required; Gold foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Gold - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-003",
+      "name": "Spot UV not required; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-004",
+      "name": "Spot UV not required; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-005",
+      "name": "Spot UV not required; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-006",
+      "name": "Spot UV not required; Red foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-007",
+      "name": "Spot UV not required; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-008",
+      "name": "Spot UV not required; Green foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-009",
+      "name": "Spot UV not required; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-010",
+      "name": "Spot UV not required; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-011",
+      "name": "Spot UV not required; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "Not required",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-012",
+      "name": "Spot UV 1 side; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-013",
+      "name": "Spot UV 1 side; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-014",
+      "name": "Spot UV 1 side; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-015",
+      "name": "Spot UV 1 side; Red foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-016",
+      "name": "Spot UV 1 side; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-017",
+      "name": "Spot UV 1 side; Green foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-018",
+      "name": "Spot UV 1 side; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-019",
+      "name": "Spot UV 1 side; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-VELVET-020",
+      "name": "Spot UV 1 side; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron + Velvet",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-VELVET"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-001",
+      "name": "Spot UV not required; no foil",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Not required",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1156,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-002",
+      "name": "Spot UV not required; Gold foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Gold - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-003",
+      "name": "Spot UV not required; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-004",
+      "name": "Spot UV not required; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-005",
+      "name": "Spot UV not required; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-006",
+      "name": "Spot UV not required; Red foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-007",
+      "name": "Spot UV not required; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-008",
+      "name": "Spot UV not required; Green foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-009",
+      "name": "Spot UV not required; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-010",
+      "name": "Spot UV not required; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1510,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-011",
+      "name": "Spot UV not required; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "Not required",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-012",
+      "name": "Spot UV 1 side; Gold foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Gold - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-013",
+      "name": "Spot UV 1 side; Silver foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-014",
+      "name": "Spot UV 1 side; Silver foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Silver - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-015",
+      "name": "Spot UV 1 side; Red foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Red - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-016",
+      "name": "Spot UV 1 side; Red foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Red - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-017",
+      "name": "Spot UV 1 side; Green foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Green - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-018",
+      "name": "Spot UV 1 side; Green foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Green - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-019",
+      "name": "Spot UV 1 side; Blue foil 1 side",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 1 side",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1628,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-800-SILVER-GLOSS-020",
+      "name": "Spot UV 1 side; Blue foil 2 sides",
+      "options": {
+        "material": "800 Micron Silver + Gloss",
+        "spot_uv": "1 side only",
+        "foil": "Blue - 2 sides",
+        "pack_size": "100 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1864,
+      "gst_rate_percent": 18,
+      "quantity_unit": "100 cards",
+      "product_sku": "VC-800-SILVER-GLOSS"
+    },
+    {
+      "sku": "VC-180-001",
+      "name": "180 Micron NT · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 335,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-180-002",
+      "name": "180 Micron NT · both sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 382,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-180-003",
+      "name": "180 Micron NT + Gloss UV · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 359,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-180-004",
+      "name": "180 Micron NT + Gloss UV · both sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 406,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-180-005",
+      "name": "180 Micron NT + Drip-Off · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 406,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-180-006",
+      "name": "180 Micron NT + Drip-Off · both sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 453,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-180"
+    },
+    {
+      "sku": "VC-MATT-UV-001",
+      "name": "Single side printing + single side UV",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 872,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-MATT-UV"
+    },
+    {
+      "sku": "VC-MATT-UV-002",
+      "name": "Both side printing + single side UV",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 896,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-MATT-UV"
+    },
+    {
+      "sku": "VC-MATT-UV-003",
+      "name": "Both side printing + both side UV",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 1014,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-MATT-UV"
+    },
+    {
+      "sku": "VC-MATT-001",
+      "name": "Matt lamination · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 565,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-MATT"
+    },
+    {
+      "sku": "VC-MATT-TEXTURE-001",
+      "name": "Matt + Texture · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 801,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-MATT-TEXTURE"
+    },
+    {
+      "sku": "VC-GLOSS-TEXTURE-001",
+      "name": "Gloss + Texture · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 424,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-TEXTURE"
+    },
+    {
+      "sku": "VC-GLOSS-LAM-001",
+      "name": "Gloss lamination · 1 side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 235,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-LAM"
+    },
+    {
+      "sku": "VC-GLOSS-LAM-002",
+      "name": "Gloss lamination · 1 side + black back",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 242,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-LAM"
+    },
+    {
+      "sku": "VC-GLOSS-LAM-003",
+      "name": "Gloss lamination · 2 sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 329,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-LAM"
+    },
+    {
+      "sku": "VC-GLOSS-UV-001",
+      "name": "Gloss UV coated · 1 side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 223,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-UV"
+    },
+    {
+      "sku": "VC-GLOSS-UV-002",
+      "name": "Gloss UV coated · 1 side + black back",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 230,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-UV"
+    },
+    {
+      "sku": "VC-GLOSS-UV-003",
+      "name": "Gloss UV coated · 2 sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 317,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-UV"
+    },
+    {
+      "sku": "VC-WITHOUT-COATING-001",
+      "name": "Without coating · single side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 211,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-WITHOUT-COATING"
+    },
+    {
+      "sku": "VC-WITHOUT-COATING-002",
+      "name": "Without coating · single side + black back",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 218,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-WITHOUT-COATING"
+    },
+    {
+      "sku": "VC-WITHOUT-COATING-003",
+      "name": "Without coating · both sides",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 282,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-WITHOUT-COATING"
+    },
+    {
+      "sku": "VC-GLOSS-UV-SMALL-001",
+      "name": "Gloss UV coated small · 1 side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 199,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-UV-SMALL"
+    },
+    {
+      "sku": "VC-GLOSS-UV-SMALL-002",
+      "name": "Gloss UV coated small · 1 side + black back",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 207,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-GLOSS-UV-SMALL"
+    },
+    {
+      "sku": "VC-WITHOUT-LAM-SMALL-001",
+      "name": "Without lamination small · 1 side",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 188,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-WITHOUT-LAM-SMALL"
+    },
+    {
+      "sku": "VC-WITHOUT-LAM-SMALL-002",
+      "name": "Without lamination small · 1 side + black back",
+      "options": {
+        "pack_size": "1000 cards",
+        "supplier_source": "Printers Club Visiting Cards Rate List"
+      },
+      "supplier_rate_inclusive": 195,
+      "gst_rate_percent": 18,
+      "quantity_unit": "1000 cards",
+      "product_sku": "VC-WITHOUT-LAM-SMALL"
+    }
+  ]
+}
