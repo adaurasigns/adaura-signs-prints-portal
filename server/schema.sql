@@ -10,4 +10,5 @@ CREATE TABLE IF NOT EXISTS payments(id INTEGER PRIMARY KEY,order_id INTEGER NOT 
 CREATE TABLE IF NOT EXISTS artwork_files(id INTEGER PRIMARY KEY,enquiry_id INTEGER REFERENCES enquiries(id),customer_id INTEGER NOT NULL REFERENCES users(id),stored_name TEXT NOT NULL,original_name TEXT NOT NULL,mime_type TEXT NOT NULL,size_bytes INTEGER NOT NULL,review_status TEXT NOT NULL DEFAULT 'pending',created_at TEXT DEFAULT CURRENT_TIMESTAMP);
 CREATE INDEX IF NOT EXISTS idx_enquiries_customer ON enquiries(customer_id,created_at DESC);
 CREATE INDEX IF NOT EXISTS idx_orders_customer ON orders(customer_id,created_at DESC);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_variants_sku ON variants(sku);
 CREATE INDEX IF NOT EXISTS idx_variants_product ON variants(product_id,active);
