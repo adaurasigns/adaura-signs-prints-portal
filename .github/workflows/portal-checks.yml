@@ -22,3 +22,10 @@ jobs:
         run: bash -n oci/install.sh oci/backup.sh oci/update.sh
       - name: Check session store syntax
         run: node --check server/sqlite-session-store.js
+      - name: Check Windows deployment script syntax
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile("$PWD/deploy-weeny.ps1", [ref]$tokens, [ref]$errors) | Out-Null
+          if ($errors.Count -gt 0) { $errors | ForEach-Object { Write-Error $_ }; exit 1 }
