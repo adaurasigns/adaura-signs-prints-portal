@@ -12,7 +12,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {quoteB2B,quoteB2C} from '../src/pricing.js';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const data=process.env.DATA_DIR||path.join(root,'data');fs.mkdirSync(path.join(data,'uploads'),{recursive:true});
+const data=process.env.WEENY_DATA_DIR||process.env.DATA_DIR||path.join(root,'data');fs.mkdirSync(path.join(data,'uploads'),{recursive:true});
 const db=new Database(path.join(data,'adaura.sqlite'));db.pragma('journal_mode=WAL');db.pragma('foreign_keys=ON');db.exec(fs.readFileSync(path.join(root,'server/schema.sql'),'utf8'));
 const app=express();app.set('trust proxy',1);app.use(helmet({contentSecurityPolicy:false}));app.use(express.json({limit:'1mb'}));
 if(process.env.NODE_ENV==='production'&&(!process.env.SESSION_SECRET||process.env.SESSION_SECRET.length<32))throw new Error('Set SESSION_SECRET (32+ characters) before production startup.');
