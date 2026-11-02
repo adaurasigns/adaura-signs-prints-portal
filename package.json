@@ -7,7 +7,8 @@
     "start": "node server/index.js",
     "dev": "node --watch server/index.js",
     "test": "node --test",
-    "test:pricing": "node --test src/printing.test.js"
+    "test:pricing": "node --test src/printing.test.js",
+    "seed:catalogue": "node server/seed-catalogue.js"
   },
   "engines": {
     "node": ">=22"
