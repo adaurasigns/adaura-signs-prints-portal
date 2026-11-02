@@ -11,7 +11,7 @@ A customer enquiry portal for AdAura Signs & Prints. Node.js 22, Express and SQL
 - POST /api/auth/login — email/password login.
 - POST /api/auth/logout — end current session.
 - GET /api/auth/me — current session user, or null.
-- POST /api/enquiries — create an enquiry for the signed-in, approved customer.
+- POST /api/enquiries — create an enquiry for the signed-in, approved customer from catalogue variants.\n- POST /api/custom-enquiries — create a custom quotation request for a service category and written specifications.
 - GET /api/my/enquiries — current customer's enquiries.
 - GET /api/my/orders — current customer's orders.
 - POST /api/my/enquiries/:id/artwork — authenticated artwork upload for an enquiry (multipart field: artwork; max 25 MB; supported declared MIME types PDF/JPEG/PNG/WebP/PostScript/Illustrator).
