@@ -7,3 +7,8 @@ See [SETUP.md](SETUP.md) for local run instructions, environment setup, function
 - Customer portal: `/`
 - Admin dashboard: `/admin.html`
 - API health: `/api/health`
+
+
+## Oracle Cloud deployment
+
+See [oci/README.md](oci/README.md) for the Oracle Cloud Always Free Ubuntu ARM64 deployment guide and cloud-init installer.
