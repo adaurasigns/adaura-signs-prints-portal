@@ -18,3 +18,7 @@ jobs:
         run: npm test
       - name: Check server syntax
         run: node --check server/index.js
+      - name: Check deployment scripts
+        run: bash -n oci/install.sh oci/backup.sh oci/update.sh
+      - name: Check session store syntax
+        run: node --check server/sqlite-session-store.js
