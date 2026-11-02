@@ -21,6 +21,7 @@ npm test
 node --check server/index.js
 chown -R root:adaura "$APP_DIR"
 chmod -R g+rX,o-rwx "$APP_DIR"
+runuser -u adaura -- env DATA_DIR="$DATA_DIR" node "$APP_DIR/server/seed-catalogue.js"
 
 if [ ! -f /etc/adaura-portal.env ]; then
   cat > /etc/adaura-portal.env <<EOF
