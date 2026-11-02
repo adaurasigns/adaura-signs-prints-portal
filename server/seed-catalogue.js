@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import Database from 'better-sqlite3';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const data=process.env.DATA_DIR||path.join(root,'data');
+const data=process.env.WEENY_DATA_DIR||process.env.DATA_DIR||path.join(root,'data');
 fs.mkdirSync(data,{recursive:true});
 const db=new Database(path.join(data,'adaura.sqlite'));
 db.pragma('journal_mode=WAL');
