@@ -15,17 +15,14 @@ const insert= db.transaction(()=>{
   const product=db.prepare(`
     INSERT INTO products(sku,name,category,description,active,sort_order)
     VALUES(@sku,@name,@category,@description,1,@sort_order)
-    ON CONFLICT(sku) DO UPDATE SET name=excluded.name,category=excluded.category,
-      description=excluded.description,active=1,sort_order=excluded.sort_order
+    ON CONFLICT(sku) DO NOTHING
   `);
   for(const item of seed.products) product.run(item);
   const findProduct=db.prepare('SELECT id FROM products WHERE sku=?');
   const variant=db.prepare(`
     INSERT INTO variants(product_id,sku,name,options_json,supplier_rate_inclusive,gst_rate_percent,quantity_unit,active)
     VALUES(@product_id,@sku,@name,@options_json,@supplier_rate_inclusive,@gst_rate_percent,@quantity_unit,1)
-    ON CONFLICT(sku) DO UPDATE SET product_id=excluded.product_id,name=excluded.name,
-      options_json=excluded.options_json,supplier_rate_inclusive=excluded.supplier_rate_inclusive,
-      gst_rate_percent=excluded.gst_rate_percent,quantity_unit=excluded.quantity_unit,active=1
+    ON CONFLICT(sku) DO NOTHING
   `);
   for(const item of seed.variants){
     const parent=findProduct.get(item.product_sku);
