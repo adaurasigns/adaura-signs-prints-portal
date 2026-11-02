@@ -16,6 +16,20 @@ Use this first deployment for a private/controlled beta with test customer accou
 - Data directory: use the injected `WEENY_DATA_DIR` environment variable. The server and seed importer already prefer this variable automatically.
 - The application stores the SQLite database, login sessions and uploaded artwork below that persistent directory.
 
+## Quick deployment on Windows 10/11
+
+The repository includes a guided PowerShell script. It downloads this exact branch, signs in, checks whether you already have a Weeny server, asks before creating one, deploys AdAura, generates a strong session secret and first admin password locally, and exposes the portal over HTTPS. It never sends those generated secrets to ChatGPT or commits them to GitHub.
+
+Requirements: Node.js 22+ and PowerShell. Install Node.js from https://nodejs.org/en/download/ if needed, then open a new PowerShell window and run:
+
+```powershell
+$script = Join-Path $env:TEMP 'deploy-adaura-weeny.ps1'
+Invoke-WebRequest -UseBasicParsing 'https://raw.githubusercontent.com/adaurasigns/adaura-signs-prints-portal/work/no-supabase-rebuild/deploy-weeny.ps1' -OutFile $script
+powershell -ExecutionPolicy Bypass -File $script
+```
+
+Follow the prompts. The script asks you to enter the email used for your AdAura administrator login; it generates the initial admin password on your PC and prints it once at the end. Save it in a password manager. Never paste the password or email verification code into ChatGPT. If a command fails, share only the error text.
+
 ## Deployment from a machine with the repository checked out
 
 Weeny's CLI runs on your computer. It deploys the current local folder; merely connecting GitHub is not enough.
