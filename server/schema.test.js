@@ -12,5 +12,9 @@ test('SQLite schema creates portal tables and pricing defaults', () => {
   }
   assert.equal(db.prepare('SELECT b2b_markup_percent FROM pricing_settings WHERE id=1').get().b2b_markup_percent,20);
   assert.equal(db.prepare('SELECT b2c_markup_percent FROM pricing_settings WHERE id=1').get().b2c_markup_percent,100);
+  const seed = JSON.parse(fs.readFileSync(new URL('./catalogue.seed.json', import.meta.url),'utf8'));
+  assert.equal(seed.products.length,17);
+  assert.equal(seed.variants.length,118);
+  assert.equal(seed.variants.filter(v=>!seed.products.some(p=>p.sku===v.product_sku)).length,0);
   db.close();
 });
