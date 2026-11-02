@@ -51,4 +51,15 @@ app.patch('/api/admin/orders/:id',auth,admin,(q,r)=>{const b=q.body||{};db.prepa
 app.use('/uploads',auth,(q,r,next)=>{const f=db.prepare('SELECT customer_id FROM artwork_files WHERE stored_name=?').get(path.basename(q.path));if(!f||!(f.customer_id===q.user.id||q.user.role==='admin'))return r.sendStatus(404);next();},express.static(path.join(data,'uploads')));
 app.use(express.static(root,{index:'index.html',dotfiles:'deny'}));
 app.use((e,_q,r,_n)=>{console.error(e);r.status(400).json({error:e.message||'Request failed.'});});
+if(process.env.ADMIN_EMAIL&&process.env.ADMIN_PASSWORD){
+ const existing=db.prepare("SELECT id FROM users WHERE email=? COLLATE NOCASE").get(process.env.ADMIN_EMAIL);
+ if(!existing){
+  const hash=await bcrypt.hash(process.env.ADMIN_PASSWORD,12);
+  db.prepare("INSERT INTO users(name,email,password_hash,role,account_status,customer_type) VALUES(?,?,?,'admin','approved','b2b')").run(process.env.ADMIN_NAME||'AdAura Administrator',process.env.ADMIN_EMAIL,hash);
+  console.log('Initial administrator account created.');
+ }
+}
+if(process.env.NODE_ENV==='production'&&(!process.env.SESSION_SECRET||process.env.SESSION_SECRET.length<32)){
+ throw new Error('Set a SESSION_SECRET of at least 32 characters in production.');
+}
 const port=Number(process.env.PORT||3000);app.listen(port,()=>console.log('AdAura standalone server on '+port));
