@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 
 function Invoke-WeenyCli {
   param([Parameter(ValueFromRemainingArguments=$true)][string[]]$Arguments)
-  & npx --yes weeny-cloud @Arguments
+  & npx.cmd --yes weeny-cloud @Arguments
   if ($LASTEXITCODE -ne 0) { throw "Weeny CLI failed (exit code $LASTEXITCODE)." }
 }
 
