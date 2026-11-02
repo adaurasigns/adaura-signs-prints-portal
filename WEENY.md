@@ -10,7 +10,7 @@ Use this first deployment for a private/controlled beta with test customer accou
 
 - Name: `adaura-portal`
 - Runtime: Node.js 22+
-- Start command: `npm start`
+- Start command: `npm run start:weeny` (runs the initial idempotent catalogue import, then `npm start`)
 - Port: `3000`
 - Health endpoint: `/api/health`
 - Data directory: use the injected `WEENY_DATA_DIR` environment variable. The server and seed importer already prefer this variable automatically.
@@ -35,10 +35,10 @@ npx weeny-cloud
 npx weeny-cloud create
 ```
 
-5. Deploy this application. This repository currently has no package-lock.json, so use `npm install`, not `npm ci`. Install dependencies and import the supplier catalogue in the release build. The importer is repeatable and updates the 17 product groups / 118 variants in place.
+5. Deploy this application. This repository currently has no package-lock.json, so use `npm install`, not `npm ci`. Install dependencies and import the supplier catalogue in the release build. The Weeny startup command runs an idempotent importer for the 17 product groups / 118 variants. Existing SKUs are left untouched on later starts so admin rate edits are preserved.
 
 ```bash
-npx weeny-cloud push . adaura-portal --build "npm install --omit=dev && npm run seed:catalogue" -- npm start
+npx weeny-cloud push . adaura-portal --build "npm install --omit=dev" -- npm run start:weeny
 ```
 
 6. Expose the app on port 3000 and keep the returned HTTPS URL:
