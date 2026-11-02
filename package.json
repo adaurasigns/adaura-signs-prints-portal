@@ -1,10 +1,6 @@
 {
-  "name": "adaura-signs-prints-portal",
-  "private": true,
-  "version": "0.2.0",
-  "type": "module",
-  "scripts": {
-    "test:pricing": "node --test src/printing.test.js",
-    "test": "node --test"
-  }
+  "name":"adaura-signs-prints-portal","private":true,"version":"1.0.0","type":"module",
+  "scripts":{"start":"node server/index.js","dev":"node --watch server/index.js","test":"node --test","test:pricing":"node --test src/printing.test.js"},
+  "engines":{"node":">=22"},
+  "dependencies":{"bcryptjs":"^2.4.3","better-sqlite3":"^11.8.1","express":"^4.21.2","express-rate-limit":"^7.5.0","express-session":"^1.18.1","helmet":"^8.0.0","multer":"^1.4.5-lts.1"}
 }
