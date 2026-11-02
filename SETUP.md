@@ -48,7 +48,7 @@ See `.env.example`. In production:
 
 This is a working foundation, not yet a production commerce platform:
 - Email verification, password reset and transactional email are not implemented.
-- Session storage currently uses Express's in-memory store; configure a persistent session store before production deployment.
+- Login sessions are stored in the same persistent SQLite database using a small Express-compatible session store. Keep `DATA_DIR` on a persistent disk.
 - No payment gateway integration, automatic payment verification, GST invoice generation, refunds or wallet ledger.
 - Artwork upload is limited to 25 MB and a MIME-type allowlist; add malware scanning and stronger file validation before accepting public uploads.
 - The catalogue database starts empty. Products and variants must be entered through the admin dashboard or imported using a reviewed SQLite import.
@@ -61,4 +61,4 @@ The database is `DATA_DIR/adaura.sqlite`; uploaded files are in `DATA_DIR/upload
 
 ## Deployment recommendation
 
-Use one small VPS or a managed Node host that provides persistent disk storage. Build and test locally first, then deploy behind HTTPS. Do not use a static-only host for this application: it needs a running Node server and persistent writable storage.
+Use one small VPS or a managed Node host that provides persistent disk storage. The prepared Oracle Cloud Always Free deployment is documented in [oci/README.md](oci/README.md). Build and test locally first, then deploy behind HTTPS. Do not use a static-only host for this application: it needs a running Node server and persistent writable storage.
