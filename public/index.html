@@ -72,24 +72,24 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.topbar{backgrou
 <script>
 const $=id=>document.getElementById(id);
 const categories=[
- {name:"Visiting Cards",sub:"Business cards & premium finishes",bg:'url("https://images.unsplash.com/photo-1606761568499-6d2451b23c66?auto=format&fit=crop&w=800&q=85")'},
- {name:"Card Holders",sub:"Metal, leather & desk holders",bg:'url("https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=800&q=85")'},
- {name:"Pamphlets / Posters",sub:"Promotional and event printing",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"Tags",sub:"Product, price and hang tags",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"Files",sub:"Office and presentation folders",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
- {name:"Letterheads",sub:"Professional business stationery",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
- {name:"Envelopes",sub:"Branded office envelopes",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
- {name:"Digital Paper Printing",sub:"Short-run and digital print jobs",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
- {name:"ATM Pouches",sub:"Secure printed pouches",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"Bill Books",sub:"Duplicate, triplicate & custom books",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"Stickers & Labels",sub:"Product labels and custom stickers",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"Pens",sub:"Promotional and branded pens",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
+ {name:"Visiting Cards",sub:"Business cards & premium finishes",bg:'url("https://images.pexels.com/photos/4466175/pexels-photo-4466175.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Card Holders",sub:"Metal, leather & desk holders",bg:'url("https://images.pexels.com/photos/8490095/pexels-photo-8490095.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Pamphlets / Posters",sub:"Promotional and event printing",bg:'url("https://images.pexels.com/photos/8292889/pexels-photo-8292889.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Tags",sub:"Product, price and hang tags",bg:'url("https://images.pexels.com/photos/9594419/pexels-photo-9594419.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Files",sub:"Office and presentation folders",bg:'url("https://images.pexels.com/photos/265024/pexels-photo-265024.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Letterheads",sub:"Professional business stationery",bg:'url("https://images.pexels.com/photos/5420892/pexels-photo-5420892.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Envelopes",sub:"Branded office envelopes",bg:'url("https://images.pexels.com/photos/14511795/pexels-photo-14511795.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Digital Paper Printing",sub:"Short-run and digital print jobs",bg:'url("https://images.pexels.com/photos/5420976/pexels-photo-5420976.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"ATM Pouches",sub:"Secure printed pouches",bg:'url("https://images.pexels.com/photos/9594430/pexels-photo-9594430.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Bill Books",sub:"Duplicate, triplicate & custom books",bg:'url("https://images.pexels.com/photos/8534243/pexels-photo-8534243.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Stickers & Labels",sub:"Product labels and custom stickers",bg:'url("https://images.pexels.com/photos/5760931/pexels-photo-5760931.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"Pens",sub:"Promotional and branded pens",bg:'url("https://images.pexels.com/photos/8716195/pexels-photo-8716195.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
  {name:"Shooting Targets",sub:"Printed practice targets",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
  {name:"Sample Files",sub:"Colour, print and material samples",bg:'url("https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=85")'},
- {name:"Flex & Vinyl Printing",sub:"Banners, backlit and vinyl graphics",bg:'url("https://images.unsplash.com/photo-1557243962-0a093922933f?auto=format&fit=crop&w=800&q=85")'},
- {name:"LED Display Boards",sub:"Indoor and outdoor LED displays",bg:'url("https://images.unsplash.com/photo-1496449903678-68ddcb189a24?auto=format&fit=crop&w=800&q=85")'},
- {name:"3D Acrylic Letters",sub:"Illuminated and non-lit letters",bg:'url("https://images.unsplash.com/photo-1496449903678-68ddcb189a24?auto=format&fit=crop&w=800&q=85")'},
- {name:"ACP & Signboards",sub:"ACP, fascia and shop signage",bg:'url("https://images.unsplash.com/photo-1548431871-c2c9f2c7dc88?auto=format&fit=crop&w=800&q=85")'}
+ {name:"Flex & Vinyl Printing",sub:"Banners, backlit and vinyl graphics",bg:'url("https://images.pexels.com/photos/8292889/pexels-photo-8292889.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"LED Display Boards",sub:"Indoor and outdoor LED displays",bg:'url("https://images.pexels.com/photos/2482119/pexels-photo-2482119.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"3D Acrylic Letters",sub:"Illuminated and non-lit letters",bg:'url("https://images.pexels.com/photos/5873654/pexels-photo-5873654.jpeg?auto=compress&w=1260&h=750&dpr=1")'},
+ {name:"ACP & Signboards",sub:"ACP, fascia and shop signage",bg:'url("https://images.pexels.com/photos/11440769/pexels-photo-11440769.jpeg?auto=compress&w=1260&h=750&dpr=1")'}
 ];
 let data={products:[],variants:[]},basket=[],me=null,activeCategory="";
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
