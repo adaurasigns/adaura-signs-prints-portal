@@ -1,0 +1,25 @@
+[Unit]
+Description=AdAura Signs & Prints customer portal
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=adaura
+Group=adaura
+WorkingDirectory=/opt/adaura-portal
+EnvironmentFile=/etc/adaura-portal.env
+ExecStart=/usr/bin/node /opt/adaura-portal/server/index.js
+Restart=always
+RestartSec=5
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/adaura
+LockPersonality=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

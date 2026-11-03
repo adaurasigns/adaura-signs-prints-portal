@@ -1,0 +1,32 @@
+# AdAura Signs & Prints Portal
+
+A customer enquiry portal for AdAura Signs & Prints. Node.js 22, Express and SQLite. Customer accounts, B2B/B2C price calculation, product catalogue, enquiries, order administration and private artwork uploads. This app uses no Supabase service.
+
+## Public routes
+- GET / — customer portal HTML.
+- GET /admin.html — administrator dashboard HTML; API access is admin-protected.
+- GET /api/health — basic application health.
+- GET /api/catalogue — active product catalogue and customer-visible variant prices. Supplier purchase rates are not returned.
+- POST /api/auth/register — register a customer; JSON body includes name, email, password (10+ chars), customer_type (b2c or b2b), optional phone, business_name and gstin.
+- POST /api/auth/login — email/password login.
+- POST /api/auth/logout — end current session.
+- GET /api/auth/me — current session user, or null.
+- POST /api/enquiries — create an enquiry for the signed-in, approved customer from catalogue variants.\n- POST /api/custom-enquiries — create a custom quotation request for a service category and written specifications.
+- GET /api/my/enquiries — current customer's enquiries.
+- GET /api/my/orders — current customer's orders.
+- POST /api/my/enquiries/:id/artwork — authenticated artwork upload for an enquiry (multipart field: artwork; max 25 MB; supported declared MIME types PDF/JPEG/PNG/WebP/PostScript/Illustrator).
+
+## Admin routes
+All /api/admin routes require an authenticated administrator:
+- GET /api/admin/summary
+- GET /api/admin/customers; PATCH /api/admin/customers/:id
+- GET /api/admin/products; POST /api/admin/products; POST /api/admin/variants
+- GET /api/admin/pricing; PUT /api/admin/pricing
+- GET /api/admin/enquiries; PATCH /api/admin/enquiries/:id; POST /api/admin/enquiries/:id/convert
+- GET /api/admin/orders; PATCH /api/admin/orders/:id
+
+## Authentication and data
+Uses cookie-based Express sessions backed by SQLite. Customer and admin login credentials are password-hashed. The first admin is created only when ADMIN_EMAIL and ADMIN_PASSWORD are configured at first startup. The database, session rows and uploaded artwork are stored under WEENY_DATA_DIR when provided (fallback: DATA_DIR, then ./data). Keep WEENY_DATA_DIR on the platform's persistent data volume, not in the release directory. Do not expose the app's source or environment variables.
+
+## Beta limitations
+This is a beta foundation. Email verification, password reset, payment gateway, automatic payment verification, GST invoices, refund ledger and malware scanning are not implemented. Prototype GST rates and markup rules require business/CA confirmation before tax invoices. Use test records until these controls are completed.

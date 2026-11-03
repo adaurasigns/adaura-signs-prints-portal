@@ -1,0 +1,35 @@
+name: Portal checks
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, "work/**"]
+jobs:
+  app-checks:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [22, 26]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
+      - name: Run automated tests
+        run: npm test
+      - name: Check server syntax
+        run: node --check server/index.js
+      - name: Check deployment scripts
+        run: bash -n oci/install.sh oci/backup.sh oci/update.sh
+      - name: Check session store syntax
+        run: node --check server/sqlite-session-store.js
+      - name: Check Windows deployment script syntax
+        shell: pwsh
+        run: |
+          $tokens = $null
+          $errors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile("$PWD/deploy-weeny.ps1", [ref]$tokens, [ref]$errors) | Out-Null
+          if ($errors.Count -gt 0) { $errors | ForEach-Object { Write-Error $_ }; exit 1 }
